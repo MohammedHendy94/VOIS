@@ -30,7 +30,6 @@ public class LoginPage extends Base {
     }
     public  void Filling_signin_info (String signinemail , String signinPassword)
     {
-
        Signin_email.sendKeys(signinemail);
        Signin_password.sendKeys(signinPassword);
     }

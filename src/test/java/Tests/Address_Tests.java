@@ -9,6 +9,6 @@ public class Address_Tests {
     @And("click proceed to checkout in address step")
     public void clickProceedToCheckoutInAddressStep() {
         adrespag.ProceedToChecoutFromAddress();
-        adrespag = new AddressPage();
+      //  adrespag = new AddressPage();
     }
 }

@@ -8,6 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+//import dev.failsafe.internal.util.Assert;
 
 public class Login_Tests extends Base {
 
@@ -61,6 +62,8 @@ LoginPage lgnpage;
 
     @Then("app keep user in the login page")
     public void appKeepUserInTheLoginPage() {
-        Assert.assertTrue(driver.findElement(By.id("SubmitLogin")).isDisplayed());
+     Assert.assertTrue(driver.findElement(By.id("SubmitLogin")).isDisplayed());
+     // Assert.isTrue(driver.findElement(By.id("SubmitLogin")).isDisplayed(), "not displayed");
+      //System.out.println("button is displayed");
     }
 }

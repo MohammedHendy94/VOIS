@@ -23,10 +23,18 @@ public class Base {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("http://automationpractice.com/index.php");
+
+        driver.get("https://demo.nopcommerce.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement signin =  driver.findElement(By.xpath("//a[@class='login']"));
-        signin.click();
+
+
+
+
+
+
+        //driver.get("http://automationpractice.com/index.php");
+        // WebElement signin =  driver.findElement(By.xpath("//a[@class='login']"));
+      //  signin.click();
 
     }
 }

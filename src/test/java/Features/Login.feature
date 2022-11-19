@@ -1,7 +1,7 @@
 Feature: Login_Scenario
   Scenario: Validate that user can go to signup page
     Given user is in the login page
-    When user enter email as "mohamed1@hendy.com" to create account
+    When user enter email as "mohamed55@hendy.com" to create account
     And click create new account
     Then app navigate user to the Registration screen
 

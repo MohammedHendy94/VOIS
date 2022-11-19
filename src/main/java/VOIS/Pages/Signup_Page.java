@@ -44,6 +44,7 @@ public class Signup_Page extends Base {
         selectMonth.selectByValue(month);
         Select selectYear = new Select(BirthYear);
         selectYear.selectByValue(year);
+
     }
     public void SettingAddressInfo(String address, String city, String postalcode){
         Address.sendKeys(address);
@@ -51,10 +52,10 @@ public class Signup_Page extends Base {
         PostalCode.sendKeys(postalcode);
     }
     public void SelectingStateandCountry(String state, String country ){
-        Select selectDay = new Select(State);
-        selectDay.selectByValue( state);
-        Select selectMonth = new Select(Country);
-        selectMonth.selectByValue(country);
+        Select selectState = new Select(State);
+        selectState.selectByValue( state);
+        Select selectCountry = new Select(Country);
+        selectCountry.selectByValue(country);
     }
     public void SettingMobileNumber(String mobile){
       MobileNumber.sendKeys(mobile);
